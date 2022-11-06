@@ -1,0 +1,29 @@
+{
+	"name": "web-ifc-101",
+	"version": "1.0.0",
+	"description": "Learning WebIFC to read data from IFC files",
+	"main": "index.js",
+	"scripts": {
+		"build": "rollup -c ./rollup.config.js",
+		"watch": "rollup -w -c ./rollup.config.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/GanguLabs/Web-Ifc-101.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/GanguLabs/Web-Ifc-101/issues"
+	},
+	"homepage": "https://github.com/GanguLabs/Web-Ifc-101#readme",
+	"dependencies": {
+		"web-ifc": "^0.0.36"
+	},
+	"devDependencies": {
+		"@open-wc/building-rollup": "^2.0.2",
+		"@rollup/plugin-node-resolve": "^15.0.1",
+		"rollup": "^2.79.1"
+	}
+}
