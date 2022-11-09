@@ -1,6 +1,8 @@
 # Web-Ifc-101
 Learning WebIFC to read data from IFC files
 
+Reference: [Web-Ifc Hello World](https://ifcjs.github.io/info/docs/Guide/web-ifc/Tutorials/Hello%20world/)
+
 ## Instructions
 
 - Run `npm build` command to bundle `app.js` file to `bundle.js`
