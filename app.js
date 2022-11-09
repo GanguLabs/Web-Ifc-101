@@ -23,12 +23,14 @@ function getIfcFile(url) {
 }
 
 ifcapi.Init().then(() => {
+    const docEle = document.getElementById("result");
     getIfcFile(ifcFileLocation).then((ifcData) => {
         modelID = ifcapi.OpenModel(ifcData);
         let isModelOpened = ifcapi.IsModelOpen(modelID);
         console.log({ isModelOpened });
         let spaces = getAllSpaces(modelID);
         console.log({ spaces });
+        docEle.innerHTML += JSON.stringify(spaces, null, "<br>");
         ifcapi.CloseModel(modelID);
     });
 });
